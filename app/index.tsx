@@ -1,11 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { Text, View } from 'react-native';
+import { t } from 'react-native-tailwindcss'; // Import t from react-native-tailwindcss
 
 export default function App() {
   return (
-    <View className="flex-1 items-center justify-center bg-white">
-      <Text>Hello World!</Text>
+    <View style={[t.flex1, t.itemsCenter, t.justifyCenter]}>
+      <Text style={[t.fontBold, t.text5xl, t.textBlue500]}>Hello world</Text>
     </View>
   );
 }
